@@ -31,13 +31,11 @@ resource "aws_iam_role" "udacity_terraform_lambda_role" {
 data "aws_iam_policy_document" "lambda_logging" {
   statement {
     effect = "Allow"
-
     actions = [
       "logs:CreateLogGroup",
       "logs:CreateLogStream",
       "logs:PutLogEvents",
     ]
-
     resources = ["arn:aws:logs:*:*:*"]
   }
 }
@@ -45,7 +43,7 @@ data "aws_iam_policy_document" "lambda_logging" {
 resource "aws_iam_policy" "lambda_logging" {
   name        = "lambda_logging"
   path        = "/"
-  description = "IAM policy for logging from a lambda"
+  description = "IAM policy for lambda logging"
   policy      = data.aws_iam_policy_document.lambda_logging.json
 }
 
@@ -62,8 +60,8 @@ resource "aws_cloudwatch_log_group" "example" {
 
 resource "aws_lambda_function" "udacity_lambda" {
   function_name = var.lambda_function["function_name"]
-  runtime       = "python3.9"
-  handler       = "greet_lambda.handler"
+  runtime       = var.lambda_function["runtime"]
+  handler       = var.lambda_function["handler"]
   role          = aws_iam_role.udacity_terraform_lambda_role.arn
   filename      = var.lambda_archive["filepath"]
   environment {
@@ -72,4 +70,3 @@ resource "aws_lambda_function" "udacity_lambda" {
     }
   }
 }
-

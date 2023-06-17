@@ -1,4 +1,3 @@
-
 variable "aws_credentials" {
   type = map(any)
   default = {
@@ -12,8 +11,10 @@ variable "aws_credentials" {
 variable "lambda_function" {
   type = map(any)
   default = {
+    runtime       = "python3.9"
     function_name = "lambda_greet"
     greeting_msg  = "Greeting from AWS Lambda!"
+    handler       = "greet_lambda.handler"
   }
 }
 

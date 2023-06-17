@@ -5,7 +5,7 @@ provider "aws" {
   token      = var.aws_token
 }
 
-resource "aws_instance" "udacity_dev_t2" {
+resource "aws_instance" "dev_udacity_t2" {
   count         = 4
   ami           = "ami-04581fbf744a7d11f"
   instance_type = "t2.micro"
@@ -16,7 +16,7 @@ resource "aws_instance" "udacity_dev_t2" {
   }
 }
 
-resource "aws_instance" "udacity_dev_m4" {
+resource "aws_instance" "dev_udacity_m4" {
   count         = 2
   ami           = "ami-04581fbf744a7d11f"
   instance_type = "m4.large"
