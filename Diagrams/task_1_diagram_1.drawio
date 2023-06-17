@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="lTPoVLofkMTHSxGaGjvk" name="Page-1">
-        <mxGraphModel dx="1980" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="2098" dy="1307" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -181,7 +181,7 @@
                         <mxPoint x="89.06291844801171" y="710.1500000000001" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="80" value="Task 1 - Diagram 1 | DinhLV1 | June 17, 2023" style="text;strokeColor=none;fillColor=none;html=1;fontSize=20;fontStyle=1;verticalAlign=middle;align=center;rounded=0;" parent="1" vertex="1">
+                <mxCell id="80" value="Task 1 - Diagram 1 | LE VAN DINH | June 17, 2023" style="text;strokeColor=none;fillColor=none;html=1;fontSize=20;fontStyle=1;verticalAlign=middle;align=center;rounded=0;" parent="1" vertex="1">
                     <mxGeometry y="40" width="560" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="81" value="." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" parent="1" vertex="1">
