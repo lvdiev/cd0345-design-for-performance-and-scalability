@@ -20,7 +20,7 @@ variable "lambda_function" {
 variable "lambda_archive" {
   type = map(any)
   default = {
-    type        = zip
+    type        = "zip"
     filepath    = "./tmp/greet_lambda.zip"
     source_file = "greet_lambda.py"
   }
