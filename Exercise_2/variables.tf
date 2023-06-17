@@ -14,7 +14,7 @@ variable "lambda_function" {
     runtime       = "python3.9"
     function_name = "lambda_greet"
     greeting_msg  = "Greeting from AWS Lambda!"
-    handler       = "greet_lambda.handler"
+    handler       = "greet_lambda.lambda_handler"
   }
 }
 
