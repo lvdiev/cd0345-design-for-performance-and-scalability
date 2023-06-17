@@ -9,7 +9,7 @@ resource "aws_instance" "dev_udacity_t2" {
   count         = 4
   ami           = "ami-04581fbf744a7d11f"
   instance_type = "t2.micro"
-  subnet_id     = "subnet-07ba9c1c2e3159476"
+  subnet_id     = var.subnet_pub1a
   tags = {
     Name        = "Udacity T2"
     Environment = "dev"
@@ -20,7 +20,7 @@ resource "aws_instance" "dev_udacity_m4" {
   count         = 2
   ami           = "ami-04581fbf744a7d11f"
   instance_type = "m4.large"
-  subnet_id     = "subnet-07ba9c1c2e3159476"
+  subnet_id     = var.subnet_pub1a
   tags = {
     Name        = "Udacity M4"
     Environment = "dev"

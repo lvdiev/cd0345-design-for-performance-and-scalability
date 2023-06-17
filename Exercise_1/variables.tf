@@ -5,22 +5,25 @@ variable "aws_region" {
 
 variable "aws_access_key" {
     type = string
+    default = ""
 }
 
 variable "aws_secret_key" {
     type = string
+    default = ""
 }
 
 variable "aws_token" {
     type = string
+    default = ""
 }
 
 variable "subnet_pub1a" {
-  description = "public Subnet 1a"
-  default = "subnet-07ba9c1c2e3159476"
+  description = "public-subnet-1a"
+  default = "subnet-04c0819bd9f93686d"
 }
 
 variable "subnet_pub1b" {
-  description = "public Subnet 1b"
-  default = "subnet-003f7e436256be757"
+  description = "public-subnet-1b"
+  default = "subnet-0917cdd517af3d41c"
 }
