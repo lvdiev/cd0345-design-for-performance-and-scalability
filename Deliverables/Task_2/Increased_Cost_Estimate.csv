@@ -1,0 +1,27 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,16819.22,201830.64,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+Udacity-DinhLV1,US East (N. Virginia),,Amazon EC2 ,0,4485.12,53821.44,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5.4xlarge), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+Udacity-DinhLV1,US East (N. Virginia),,VPN Connection,0,567,6804.00,USD,,"Working days per month (22), Number of subnet associations (4)"
+Udacity-DinhLV1,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,33.3,399.60,USD,,Number of NAT Gateways (1)
+Udacity-DinhLV1,US East (N. Virginia),,S3 Standard,0,471.04,5652.48,USD,,S3 Standard storage (20 TB per month)
+Udacity-DinhLV1,US East (N. Virginia),,Data Transfer,0,0,0.00,USD,,
+Udacity-DinhLV1,US East (N. Virginia),,Gateway Load Balancer,0,846.8,10161.60,USD,,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (1), Average connection/flow duration (100 seconds), Average number of new connections/flows (100 per second), Total processed bytes (150 GB per hour)"
+Udacity-DinhLV1,US East (N. Virginia),,Amazon RDS for PostgreSQL,0,9030.759999999998,108369.12,USD,,"Storage volume (General Purpose SSD (gp2)), Storage amount (30 GB), Nodes (2), Instance Type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand)"
+Udacity-DinhLV1,US East (N. Virginia),,Amazon CloudFront,0,1085.2,13022.40,USD,,"Data transfer out to internet (10 TB per month), Data transfer out to origin (10 TB per month), Number of requests (HTTPS) (10000000 per month)"
+Udacity-DinhLV1,US East (N. Virginia),,Amazon CloudWatch,0,300,3600.00,USD,,Number of Metrics (includes detailed and custom metrics) (1000)
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
+
+Changes made
+    - EC2 instance type upgraded from `m5.2xlarge` to `m5.4xlarge`
+    - RDS for PostgreSQL instance type upgraded from `db.m5.4xlarge` to `db.m5.8xlarge`
+    - CloudWatch with 1000 metrics added
